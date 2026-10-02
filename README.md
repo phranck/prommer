@@ -28,4 +28,4 @@ The Xcode project is the single source of truth and is not generated. `Sources` 
 
 ## License
 
-This repository has been published under the [MIT](https://layered.mit-license.org) license.
+This repository has been published under the [MIT](https://layered.mit-license.org) license. The bundled typeface carries its own, which [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) names.
