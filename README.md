@@ -6,6 +6,8 @@
 [![language](https://img.shields.io/github/languages/top/phranck/prommer?style=flat&color=43a047&label=language)](https://github.com/phranck/prommer)
 [![stars](https://img.shields.io/github/stars/phranck/prommer?style=flat&color=1e88e5&label=stars)](https://github.com/phranck/prommer)
 
+<img src="Artwork/banner.png" alt="The Prommer window, with the product name, manufacturer, product ID and serial number of a NeXT Sound Box mini" width="860">
+
 </div>
 
 # Prommer
