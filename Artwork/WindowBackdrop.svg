@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The window backdrop, built from the four bars of the LAYERED mark.
+
+  Each band is one path stroked several times, widest first, so the colours nest inside each
+  other and the cream lines fall out as the gaps between them. The window blurs this heavily,
+  which is why the shapes are large and the palette carries the whole picture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#efae52"/>
+
+  <g fill="none" stroke-linecap="butt">
+    <!-- Comes in level from the left, turns up towards the top right corner. -->
+    <path id="upper" d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#fdf6e3" stroke-width="150"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#c64616" stroke-width="144"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#fdf6e3" stroke-width="112"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#fbac3e" stroke-width="106"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#fdf6e3" stroke-width="74"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#758c34" stroke-width="68"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#fdf6e3" stroke-width="36"/>
+    <path d="M -20,230 H 300 A 140,140 0 0 1 440,90 V -20"
+          stroke="#2b7488" stroke-width="30"/>
+
+    <!-- Sweeps out of the bottom edge and leaves to the right. -->
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#fdf6e3" stroke-width="150"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#2b7488" stroke-width="144"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#fdf6e3" stroke-width="112"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#758c34" stroke-width="106"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#fdf6e3" stroke-width="74"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#fbac3e" stroke-width="68"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#fdf6e3" stroke-width="36"/>
+    <path d="M 290,620 A 230,230 0 0 1 520,390 H 620"
+          stroke="#c64616" stroke-width="30"/>
+  </g>
+</svg>

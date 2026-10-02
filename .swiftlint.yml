@@ -1,0 +1,38 @@
+included:
+  - Sources
+  - Tests
+
+# Rules the project deliberately works against, rather than ones nobody got around to.
+disabled_rules:
+  # Views and descriptor blocks hold many short stored properties in a row, and splitting a
+  # type to satisfy a line count would scatter what belongs together.
+  - type_body_length
+  # The window's explanatory texts are string literals, and a literal cannot be wrapped
+  # without either breaking it into pieces joined by + or moving it out of sight of the view
+  # it belongs to. Neither is worth a column limit.
+  - line_length
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - last_where
+  - redundant_nil_coalescing
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+
+identifier_name:
+  # A single letter is never a name here, so the usual exceptions for i, x and id are gone.
+  min_length: 3
+  excluded:
+    - id
+
+file_length:
+  warning: 500
+  error: 800
+
+function_body_length:
+  warning: 60
+  error: 100

@@ -1,0 +1,681 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ bytes. The hex column is what goes into the EEPROM, mirrored for the audio chip. The text column is the same bytes as the chip will read them." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Bytes. Die Hexspalte ist das, was in den Speicher geht, für den Audiochip gespiegelt. Die Textspalte zeigt dieselben Bytes so, wie der Chip sie liest."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bytes. The hex column is what goes into the EEPROM, mirrored for the audio chip. The text column is the same bytes as the chip will read them."
+          }
+        }
+      }
+    },
+    "%@ carries a character the chip cannot transmit. Use plain ASCII." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ enthält ein Zeichen, das der Chip nicht übertragen kann. Nimm reines ASCII."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ carries a character the chip cannot transmit. Use plain ASCII."
+          }
+        }
+      }
+    },
+    "%@ is %lld characters long, and the field holds %lld." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ist %lld Zeichen lang, und das Feld fasst %lld."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ is %lld characters long, and the field holds %lld."
+          }
+        }
+      }
+    },
+    "Asked the adapter for command %@ and it answered %@." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adapter wurde nach Befehl %@ gefragt und hat %@ geantwortet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asked the adapter for command %@ and it answered %@."
+          }
+        }
+      }
+    },
+    "Assembled %lld bytes instead of %lld." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zusammengesetzt wurden %lld Bytes statt %lld."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assembled %lld bytes instead of %lld."
+          }
+        }
+      }
+    },
+    "bus setup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bus-Einrichtung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bus setup"
+          }
+        }
+      }
+    },
+    "Bus-powered, up to 500 mA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über den Bus versorgt, bis 500 mA"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bus-powered, up to 500 mA"
+          }
+        }
+      }
+    },
+    "Connect J1 on the board and leave its USB socket empty." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steck das Kabel auf J1 und lass die USB-Buchse der Box leer."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect J1 on the board and leave its USB socket empty."
+          }
+        }
+      }
+    },
+    "EEPROM content" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inhalt des Speichers"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EEPROM content"
+          }
+        }
+      }
+    },
+    "fetch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abholen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fetch"
+          }
+        }
+      }
+    },
+    "Four hexadecimal digits, for example 0x2704." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vier hexadezimale Stellen, zum Beispiel 0x2704."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Four hexadecimal digits, for example 0x2704."
+          }
+        }
+      }
+    },
+    "Leave this as it is. A computer reads two numbers when something is plugged in: who built it, and which product it is. This is the second one. It changes nothing about how the box sounds or behaves, and the Sound Settings show the product name above, not this number. Give a second board a different one only when a program has to tell the two apart." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lass das so. Ein Rechner liest beim Anstecken zwei Zahlen: wer das Gerät gebaut hat und welches Produkt es ist. Das hier ist die zweite. Sie ändert nichts am Klang und am Verhalten der Box, und in den Toneinstellungen steht der Gerätename von oben, nicht diese Zahl. Ein zweites Board bekommt nur dann eine andere, wenn ein Programm die beiden auseinanderhalten muss."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave this as it is. A computer reads two numbers when something is plugged in: who built it, and which product it is. This is the second one. It changes nothing about how the box sounds or behaves, and the Sound Settings show the product name above, not this number. Give a second board a different one only when a program has to tell the two apart."
+          }
+        }
+      }
+    },
+    "Leave this as it is. It is the number a host reads beside the vendor, and the Sound Settings show the product name above rather than this. Give a second board its own only when a program has to tell the two apart." : {
+      "comment" : "A description of the product ID field.",
+      "isCommentAutoGenerated" : true
+    },
+    "Manufacturer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hersteller"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manufacturer"
+          }
+        }
+      }
+    },
+    "MCP2221A connected" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MCP2221A verbunden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MCP2221A connected"
+          }
+        }
+      }
+    },
+    "No adapter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Adapter"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No adapter"
+          }
+        }
+      }
+    },
+    "No chip answered at address %@. Unplug the Sound Box from USB: with power on it, the audio chip holds the bus." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unter der Adresse %@ hat kein Baustein geantwortet. Zieh die Sound Box vom USB ab: solange sie Strom hat, belegt der Audiochip den Bus."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No chip answered at address %@. Unplug the Sound Box from USB: with power on it, the audio chip holds the bus."
+          }
+        }
+      }
+    },
+    "No MCP2221A found. Plug the adapter in, or quit whatever else is using it." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein MCP2221A gefunden. Steck den Adapter an, oder beende, was ihn sonst belegt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No MCP2221A found. Plug the adapter in, or quit whatever else is using it."
+          }
+        }
+      }
+    },
+    "Opening the adapter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adapter wird geöffnet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opening the adapter"
+          }
+        }
+      }
+    },
+    "Plug the Adafruit MCP2221A breakout into this Mac." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Steck den Adafruit MCP2221A an diesen Mac."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plug the Adafruit MCP2221A breakout into this Mac."
+          }
+        }
+      }
+    },
+    "Power" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stromversorgung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Power"
+          }
+        }
+      }
+    },
+    "Product ID" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produktkennung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product ID"
+          }
+        }
+      }
+    },
+    "Product name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerätename"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product name"
+          }
+        }
+      }
+    },
+    "read" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lesen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "read"
+          }
+        }
+      }
+    },
+    "Read back" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurückgelesen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read back"
+          }
+        }
+      }
+    },
+    "Read EEPROM" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicher lesen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read EEPROM"
+          }
+        }
+      }
+    },
+    "Reading" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird gelesen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading"
+          }
+        }
+      }
+    },
+    "status" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "status"
+          }
+        }
+      }
+    },
+    "The adapter could not be opened. IOKit reports status %@." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adapter liess sich nicht öffnen. IOKit meldet Status %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The adapter could not be opened. IOKit reports status %@."
+          }
+        }
+      }
+    },
+    "The adapter did not accept the %@ report. IOKit reports status %@." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adapter hat den Report %@ nicht angenommen. IOKit meldet Status %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The adapter did not accept the %@ report. IOKit reports status %@."
+          }
+        }
+      }
+    },
+    "The adapter stayed busy during %@." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adapter blieb während %@ belegt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The adapter stayed busy during %@."
+          }
+        }
+      }
+    },
+    "The adapter took the %@ report and did not answer." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adapter hat den Report %@ angenommen und nicht geantwortet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The adapter took the %@ report and did not answer."
+          }
+        }
+      }
+    },
+    "The EEPROM read back different bytes than were written." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Speicher hat andere Bytes zurückgegeben, als geschrieben wurden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The EEPROM read back different bytes than were written."
+          }
+        }
+      }
+    },
+    "The transfer did not finish. The adapter was reset, so try again." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Übertragung ist nicht fertig geworden. Der Adapter wurde zurückgesetzt, versuch es nochmal."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The transfer did not finish. The adapter was reset, so try again."
+          }
+        }
+      }
+    },
+    "The whole chip. The first %@ bytes are what gets written, and the rest is what the board already carries. The hex column is what sits in the EEPROM, mirrored for the audio chip up to the serial number; the text column is the same bytes as they are meant to be read." : {
+      "comment" : "A description of the EEPROM, showing the bytes that are written and the ones that are already there.",
+      "isCommentAutoGenerated" : true
+    },
+    "This has to match how the board is wired, so it is fixed. The audio chip misbehaves when the descriptor claims something the board does not do." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das muss zur Verdrahtung des Boards passen und steht deshalb fest. Der Audiochip verhält sich falsch, wenn der Deskriptor etwas behauptet, was das Board nicht tut."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This has to match how the board is wired, so it is fixed. The audio chip misbehaves when the descriptor claims something the board does not do."
+          }
+        }
+      }
+    },
+    "Up to %lld ASCII characters." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Höchstens %lld ASCII-Zeichen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Up to %lld ASCII characters."
+          }
+        }
+      }
+    },
+    "write" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schreiben"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "write"
+          }
+        }
+      }
+    },
+    "Write descriptor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deskriptor schreiben"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write descriptor"
+          }
+        }
+      }
+    },
+    "Writing" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird geschrieben"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Writing"
+          }
+        }
+      }
+    },
+    "Written and verified. Unplug the adapter and connect the box to its host." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschrieben und geprüft. Zieh den Adapter ab und häng die Box an ihren Rechner."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Written and verified. Unplug the adapter and connect the box to its host."
+          }
+        }
+      }
+    },
+    "Yours alone. It is stored past what the audio chip reads, so no host ever sees it, and reading the board brings it back." : {
+      "comment" : "A description of the serial number field.",
+      "isCommentAutoGenerated" : true
+    }
+  },
+  "version" : "1.1"
+}

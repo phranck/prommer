@@ -1,0 +1,91 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+
+# A feature branch cancels its own older run, because a newer commit supersedes it. On main
+# a run must finish, since it is the one that cuts a release.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Lint and test
+    runs-on: macos-15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Lint
+        run: swiftlint lint --strict
+
+      # Both targets build unsigned, so neither carries a team. Signing only one of them
+      # leaves macOS refusing to load the test bundle into the host app.
+      - name: Test
+        run: |
+          xcodebuild test \
+            -project Prommer.xcodeproj \
+            -scheme Prommer \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+  release:
+    name: Publish release
+    needs: check
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: macos-15
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # The version lives in the Xcode project and nowhere else, so a release cannot name a
+      # version the app does not report.
+      - name: Read the version
+        id: version
+        run: |
+          version=$(xcodebuild -project Prommer.xcodeproj -target Prommer -showBuildSettings \
+            | awk '/ MARKETING_VERSION = /{print $3}')
+          echo "tag=v${version}" >> "$GITHUB_OUTPUT"
+
+      - name: Stop if the tag already exists
+        id: existing
+        run: |
+          if git ls-remote --exit-code --tags origin "refs/tags/${{ steps.version.outputs.tag }}" >/dev/null 2>&1; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # The notes are written by hand and say what the app does, not what changed. Without
+      # the file the release carries the tag alone rather than a generated changelog.
+      - name: Create the release
+        if: steps.existing.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f RELEASE_NOTES.md ]; then
+            gh release create "${{ steps.version.outputs.tag }}" \
+              --title "${{ steps.version.outputs.tag }}" \
+              --notes-file RELEASE_NOTES.md \
+              --target main
+          else
+            gh release create "${{ steps.version.outputs.tag }}" \
+              --title "${{ steps.version.outputs.tag }}" \
+              --notes "" \
+              --target main
+          fi
